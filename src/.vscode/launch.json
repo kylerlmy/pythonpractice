@@ -1,0 +1,35 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: startup.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/startup.py",
+            "console": "integratedTerminal",
+            "args" : ["--port", "1593"],
+            // "pythonPath": "${config:python.pythonPath}",
+            "osx": {
+                "pythonPath": "^\"\\${env:SPARK_HOME}/bin/spark-submit\""
+             },
+            "windows": {
+                // "pythonPath": "^\"\\${env:SPARK_HOME}/bin/spark-submit.cmd\""
+                "pythonPath":"${config:python.pythonPath}" 
+            },
+            "linux": {
+                "pythonPath": "^\"\\${env:SPARK_HOME}/bin/spark-submit\""
+            },
+        },
+        {
+            "name": "Python: Current File (External Terminal)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "externalTerminal"
+        }
+    ],
+    
+}
