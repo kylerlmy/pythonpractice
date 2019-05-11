@@ -20,9 +20,13 @@ print('{name} wrote {book}'.format(name=name,book='A byte of python'))#’=‘�
 print('my name=', end='')
 print('kyle', end='')
 print(' Li')
-#如果你需要指定一些未经过特殊处理的字符串，比如转义序列，那么你需要在字符串前增加 r 或 R 来指定一个 原始（Raw） 字符串
+
+
+#转义
+print('what\'s are  name?')#单引号
+print("what's your \\ name?")#双引号
 print("Newlines are indicated by \n")
-print(r"Newlines are indicated by \n")
+print(r"Newlines are indicated by \n")#如果你需要指定一些未经过特殊处理的字符串，比如转义序列，那么你需要在字符串前增加 r 或 R 来指定一个 原始（Raw） 字符串
 
 #一个物理行拆分成多个逻辑行
 id= \
