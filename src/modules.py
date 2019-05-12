@@ -36,3 +36,4 @@ print(dir(sys))#dir 返回对象（模块等）所定义的名称列表
 
 
 
+help(int)
