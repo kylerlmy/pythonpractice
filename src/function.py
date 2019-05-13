@@ -115,3 +115,4 @@ def print_max(x,y):
 print_max(3,5)
 print(print_max.__doc__)#Python将所有东西都视为一个对象，这其中自然包括函,__doc__为函数的属性
 help(print_max)#查看函数说明
+
