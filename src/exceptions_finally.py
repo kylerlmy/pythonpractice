@@ -21,6 +21,9 @@ except IOError:
 except KeyboardInterrupt:
     print("!! You cancelled the reading from the file")
 finally:
-    if f:
+    print(f==True)
+    if f: # f的值为什么是 bool型
         f.close()
     print("(Clearning up:Closed the file)")
+
+help(True)
